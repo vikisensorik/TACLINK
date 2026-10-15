@@ -1,0 +1,15 @@
+# Bugs
+
+In Tactile CTR the following PINS are not working
+
+ MOSI0 : RA4
+ MISO2 : RB4
+
+ According to datasheet "RA4 and RB4 pins are controlled by the SOSC": SOSC is clock
+
+ in the next hardware don't use RA4 and RB4.
+
+# Recommendation
+
+ Also don't use RB11 and RB13 ( I didn't test these pins, it might work but try not to use )
+
