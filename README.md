@@ -14,6 +14,29 @@
 - **Additional Protocols:** I²C support for expanded peripheral communication.
 - **Target Applications:** Robotics, touch-sensitive interfaces, and pressure-mapping systems.
 
+    ```
+taclink/
+├── README.md
+├── LICENSE
+├── electronics/                    # Hardware design files
+│   ├── schematic/                  # Circuit schematics (.sch)
+│   ├── pcb/                        # Board layout (.brd)
+│   ├── libraries/                  # Custom Eagle symbols and footprints (.lbr)
+│   └── manufacturing/              # Production files
+│       ├── gerbers/                # Gerber files for PCB fabrication
+│       ├── BOM.csv                 # Bill of Materials
+│       └── pick_and_place.csv      # Component placement file
+├── firmware/                       # PIC32 source code
+├── cad/                            # 3D models and enclosure files
+│   ├── enclosure/                  # Case/housing STEP/STL files
+│   └── assembly/                   # Assembly models
+└── documents/                      # Documentation
+    ├── datasheets/                 # Component datasheets
+    ├── pinout/                     # Pin mapping diagrams
+    └── guides/                     # User guides and application notes
+```
+
+
 ## Use Case
 
 TACLINK acts as the critical bridge between a high-density tactile sensing module (featuring 36 pressure sensors) and a host system. It communicates with the upstream sensor module using a Software SPI (SW SPI) protocol to continuously sample detailed pressure data. 
