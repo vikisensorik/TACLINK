@@ -14,7 +14,10 @@
 - **Additional Protocols:** I²C support for expanded peripheral communication.
 - **Target Applications:** Robotics, touch-sensitive interfaces, and pressure-mapping systems.
 
-    ```
+## Project Structure
+
+
+```
 taclink/
 ├── README.md
 ├── LICENSE
